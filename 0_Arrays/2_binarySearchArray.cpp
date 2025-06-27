@@ -3,9 +3,12 @@ using namespace std;
 
 int binarySearch(int A[] , int s, int e , int k){
 
+    // the middle part comparison will decide the trajectory
     int mid = (s+e)/2 ;
 
     if(s <= e){
+
+        // base condition
         if(A[mid] == k){
             return mid ;
         }
@@ -19,7 +22,7 @@ int binarySearch(int A[] , int s, int e , int k){
         }
 
     }
-
+    // exit condition
     return -1 ;
 }
 
@@ -37,6 +40,7 @@ int main(){
     int k ;
     cin >> k ;
 
+    // Parameters for binary search - Array, starting index, end index, target value
     cout << binarySearch(A,0, n-1 , k) ;
 
     return 0;
