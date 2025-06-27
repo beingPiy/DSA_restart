@@ -2,3 +2,4 @@
 *.txt
 *.json
 *.exe
+relative/path/to/dir/anotherfile
