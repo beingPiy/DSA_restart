@@ -15,17 +15,18 @@ int main(){
     cout << b << "\n" << c << "\n";
     //Output - 0x7fffffffcf08, abc
 
+    
+    
     // Input in character array
     char s1[] = {'h', 'e', 'l', 'l' , 'o', '\0'} ;
     char s2[] = "hello" ;
-
-    cout << s1 << " " << sizeof(s1) << "\n" ;
-    cout << s2 << " " << sizeof(s2) << "\n" ;
-
-    // Operator Overloading
     char s3[10] ; // never initialize array without size
     cin >> s3 ;
+    
+    cout << s1 << " " << sizeof(s1) << "\n" ;
+    cout << s2 << " " << sizeof(s2) << "\n" ;
     cout << s3 ;
+
 
     return 0;
 }
